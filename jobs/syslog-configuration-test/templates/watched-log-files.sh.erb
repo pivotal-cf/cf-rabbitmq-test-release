@@ -1,0 +1,7 @@
+#!/bin/bash -ex
+
+WATCHED_LOG_FILES=(
+  <%= p("syslog-configuration-test.watched-log-files").map(&:inspect).join(" ") %>
+)
+
+WATCHED_LOG_FILES="${WATCHED_LOG_FILES:?must be an array of file paths}"
