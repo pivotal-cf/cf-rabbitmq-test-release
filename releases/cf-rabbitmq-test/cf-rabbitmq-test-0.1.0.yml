@@ -1,0 +1,15 @@
+---
+packages: []
+jobs:
+- name: syslog-configuration-test
+  version: 408af9af086d4f51184430eb327bb2d4b8105f53
+  fingerprint: 408af9af086d4f51184430eb327bb2d4b8105f53
+  sha1: 1ffc99aa7faa8e80a372e3bfe353d3bada0dc504
+license:
+  version: 994058fe0cc37a7abfdc91c9e5baeec6f84eb498
+  fingerprint: 994058fe0cc37a7abfdc91c9e5baeec6f84eb498
+  sha1: 0f791d95a7157627f49ee35742b589d3bb3b03df
+commit_hash: d2cb21c9
+uncommitted_changes: true
+name: cf-rabbitmq-test
+version: 0.1.0
