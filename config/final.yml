@@ -1,0 +1,7 @@
+---
+final_name: cf-rabbitmq-test
+min_cli_version: 1.3232.0
+blobstore:
+  provider: s3
+  options:
+    bucket_name: rabbitmq-test-bosh-release-blobs
