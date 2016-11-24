@@ -19,9 +19,13 @@ ensure_all_inspected_directories_are_not_world_readable() {
 
   for directory_to_inspect in "${DIRECTORIES_TO_INSPECT[@]}"
   do
-    files_breaking_the_rules=$(find -L "$directory_to_inspect" -perm -o=r -type f)
-    [[ -z "${files_breaking_the_rules}" ]] ||
-    fail "the following files are world readable: ${files_breaking_the_rules}"
+    directory_breaking_the_rules=$(find -L "$directory_to_inspect" -maxdepth 0 -perm -o=r,o=x,o=w -type d)
+    [[ -z "${directory_breaking_the_rules}" ]] ||
+    fail "the following directory is world readable: ${directory_to_inspect}"
+
+    directory_owned_by_vcap=$(find -L "$directory_to_inspect" -maxdepth 0 -group vcap -user vcap -type d)
+    [[ -n "${directory_owned_by_vcap}" ]] ||
+    fail "the following directory is not owned by vcap:vcap: ${directory_to_inspect}"
   done
 }
 
