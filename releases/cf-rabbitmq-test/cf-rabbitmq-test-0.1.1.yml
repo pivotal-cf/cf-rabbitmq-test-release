@@ -1,0 +1,19 @@
+---
+packages: []
+jobs:
+- name: permissions-test
+  version: ee21f05ad2a3eefb298473827dee0e5a817ad59c
+  fingerprint: ee21f05ad2a3eefb298473827dee0e5a817ad59c
+  sha1: 6327e5aa50a32b3b146c720589eb2e1f7809c0be
+- name: syslog-configuration-test
+  version: 408af9af086d4f51184430eb327bb2d4b8105f53
+  fingerprint: 408af9af086d4f51184430eb327bb2d4b8105f53
+  sha1: 1ffc99aa7faa8e80a372e3bfe353d3bada0dc504
+license:
+  version: f57eeb5bcbe4624eff263a9f96f1db2e6039ba1e
+  fingerprint: f57eeb5bcbe4624eff263a9f96f1db2e6039ba1e
+  sha1: b61b5dc52a741f63219f4e92a7471ad80a715d23
+commit_hash: b9c0cf2b
+uncommitted_changes: true
+name: cf-rabbitmq-test
+version: 0.1.1
