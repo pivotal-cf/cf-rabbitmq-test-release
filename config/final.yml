@@ -4,4 +4,6 @@ min_cli_version: 1.3232.0
 blobstore:
   provider: s3
   options:
+    region: eu-west-1
+    endpoint: https://s3-eu-west-1.amazonaws.com
     bucket_name: rabbitmq-test-bosh-release-blobs
