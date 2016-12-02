@@ -5,7 +5,7 @@
 # shellcheck disable=SC1091
 . /var/vcap/jobs/syslog-configuration-test/bin/watched-log-files.sh
 
-RSYSLOG_CONFIG_CHECK="$(rsyslogd -f /etc/rsyslog.d/rsyslog.conf -d -N 2 2>&1)"
+RSYSLOG_CONFIG_CHECK="$(rsyslogd -d -N 2 2>&1)"
 
 main() {
   ensure_rsyslog_imfile_module_loaded
