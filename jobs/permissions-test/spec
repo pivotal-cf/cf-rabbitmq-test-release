@@ -1,7 +1,8 @@
 # vim: set filetype=yaml :
 ---
 name: permissions-test
-packages: []
+packages:
+  - bash-test-helpers
 
 properties:
   permissions-test.directories:

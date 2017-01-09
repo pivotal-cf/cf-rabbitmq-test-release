@@ -5,13 +5,11 @@
 # shellcheck disable=SC1091
 . /var/vcap/jobs/permissions-test/bin/directories-to-inspect.sh
 
+# shellcheck disable=1091
+. "/var/vcap/packages/bash-test-helpers/common.bash"
+
 main() {
   ensure_all_inspected_directories_are_not_world_readable
-}
-
-fail() {
-  echo "$*"
-  exit 1
 }
 
 ensure_all_inspected_directories_are_not_world_readable() {

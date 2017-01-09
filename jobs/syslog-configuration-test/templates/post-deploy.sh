@@ -5,18 +5,14 @@
 # shellcheck disable=SC1091
 . /var/vcap/jobs/syslog-configuration-test/bin/watched-log-files.sh
 
+# shellcheck disable=1091
+. "/var/vcap/packages/bash-test-helpers/common.bash"
 
 main() {
   load_ryslogd_config_check
   ensure_rsyslog_imfile_module_loaded
   ensure_rsyslog_watches_log_files
 }
-
-fail() {
-  echo "$*"
-  exit 1
-}
-
 
 # because of differing behaviours of rsyslogd versions, we cannot assume that
 # this command will exit 0 with identical configuration.

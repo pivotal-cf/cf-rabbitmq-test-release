@@ -1,7 +1,8 @@
 # vim: set filetype=yaml :
 ---
 name: syslog-configuration-test
-packages: []
+packages:
+  - bash-test-helpers
 
 properties:
   syslog-configuration-test.watched-log-files:

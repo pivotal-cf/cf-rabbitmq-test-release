@@ -1,9 +1,12 @@
 # vim: set filetype=yaml :
 ---
 name: rabbitmq-statsdb-reset-cron-test
-packages: []
 
 properties: {}
 
 templates:
   post-deploy.sh: bin/post-deploy
+
+packages:
+  - bash-test-helpers
+
