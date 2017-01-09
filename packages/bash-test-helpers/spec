@@ -1,0 +1,7 @@
+---
+name: bash-test-helpers
+
+dependencies:
+
+files:
+  - bash-test-helpers/common.bash
