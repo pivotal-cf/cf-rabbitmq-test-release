@@ -9,9 +9,7 @@
 . "/var/vcap/packages/bash-test-helpers/common.bash"
 
 main() {
-  # Disabled while we figure out what we're actually supposed to be checking.
-  # ensure_all_inspected_directories_are_not_world_readable
-  echo "Skipping the permission tests"
+  ensure_all_inspected_directories_are_not_world_readable
 }
 
 ensure_all_inspected_directories_are_not_world_readable() {
