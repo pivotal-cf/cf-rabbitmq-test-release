@@ -1,0 +1,20 @@
+# vim: set filetype=yaml :
+---
+name: check-logs-test
+
+properties: {}
+
+templates:
+  post-deploy.sh: bin/post-deploy
+
+properties:
+  check-logs-test.files:
+    description: "log files path"
+    example:
+      - "/var/vcap/sys/log/rabbitmq-server/rabbitmq@*"
+      - "/var/vcap/sys/log/rabbitmq-server/startup.log"
+    default: []
+
+packages:
+  - bash-test-helpers
+
