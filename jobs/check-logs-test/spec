@@ -2,10 +2,9 @@
 ---
 name: check-logs-test
 
-properties: {}
-
 templates:
   post-deploy.sh: bin/post-deploy
+  files-to-inspect.sh.erb: bin/files-to-inspect.sh
 
 properties:
   check-logs-test.files:
