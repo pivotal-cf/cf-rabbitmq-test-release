@@ -1,0 +1,31 @@
+name: cf-rabbitmq-test
+version: 0.2.0
+commit_hash: 5530bbb
+uncommitted_changes: false
+jobs:
+- name: check-logs-test
+  version: c09a8d959061faff6af7958c4cae6adcbfb1fc07f35b62cc0742f160c254d728
+  fingerprint: c09a8d959061faff6af7958c4cae6adcbfb1fc07f35b62cc0742f160c254d728
+  sha1: sha256:5b5de1bb63a23a1eeb2332ca5fdf4db590588a5146ea4628436f45ce70233452
+- name: permissions-test
+  version: 46f6aa2e01d79512fbb28de296f9fbb272eadeebebb8a93c0cbac578e12bd1bb
+  fingerprint: 46f6aa2e01d79512fbb28de296f9fbb272eadeebebb8a93c0cbac578e12bd1bb
+  sha1: sha256:1a3ec8d8e19ac4be466150896c3b3037f560d4a2a5f320b2a47a6545efb8e994
+- name: rabbitmq-statsdb-reset-cron-test
+  version: b2593bba04b49a11af9bdb7ef7d66944173f69581066d2ca87bd667d612adb07
+  fingerprint: b2593bba04b49a11af9bdb7ef7d66944173f69581066d2ca87bd667d612adb07
+  sha1: sha256:b75081b58a31769fe6ae705e92f219eb5252492069a562821f464a8d177543c3
+- name: syslog-configuration-test
+  version: 15b151b2be017c6210e3a99d5d9349334da3acd16a27fcf6f853a5306eefc7ad
+  fingerprint: 15b151b2be017c6210e3a99d5d9349334da3acd16a27fcf6f853a5306eefc7ad
+  sha1: sha256:cffc1aa30ab2872c3df638803ea1c34f05c1a7265c89bdd8c7ac4356a84fd583
+packages:
+- name: bash-test-helpers
+  version: 0e2fa1b504063cc6bc9b6a6a431d7c20547936ced37e0b17a9bb36a251b5ba17
+  fingerprint: 0e2fa1b504063cc6bc9b6a6a431d7c20547936ced37e0b17a9bb36a251b5ba17
+  sha1: sha256:52e48338231c55609058caca14940ab7a0e2a521ed8b4916663df6645e8c679e
+  dependencies: []
+license:
+  version: a33ecac3732bea30dd41ae46dbc88761d98cb93e29379daa2aaa3926ef4408e0
+  fingerprint: a33ecac3732bea30dd41ae46dbc88761d98cb93e29379daa2aaa3926ef4408e0
+  sha1: sha256:0d4bd6eafd467f66f3556f7a67c6d496ed2058a7ae6a43ab136fc6cbec8914b3
