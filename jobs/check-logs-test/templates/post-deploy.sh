@@ -13,11 +13,19 @@ main() {
   local start_timestamp
   start_timestamp=$(date +%s)
   sleep 1
+  local port=5672
 
-  echo 0091AMQP | nc localhost 5672
+  echo 0091AMQP | nc localhost $port
 
+  RETVAL=$?
+  if [[ $RETVAL != 0 ]]; then
+    fail "Failed to send a message to port $port"
+  fi
+
+  echo "About to inspect files..."
   for file_to_inspect in "${FILES_TO_INSPECT[@]}"
   do
+    echo "Inspecting $file_to_inspect..."
     dir_name=$(dirname "$file_to_inspect")
     file_expression=$(basename "$file_to_inspect")
     file=$(find "$dir_name" -mindepth 1 -maxdepth 1 -type f | grep -E "$file_expression")
