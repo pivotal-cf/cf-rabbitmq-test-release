@@ -19,7 +19,8 @@ main() {
 
   RETVAL=$?
   if [[ $RETVAL != 0 ]]; then
-    fail "Failed to send a message to port $port"
+    echo "Failed to send a message to port $port"
+    exit 1
   fi
 
   echo "About to inspect files..."
@@ -32,13 +33,15 @@ main() {
 
     if [[ -z "$file" ]]
     then
-      fail "Unable to find file in [${dir_name}] matching pattern [${file_expression}]"
+      echo "Unable to find file in [${dir_name}] matching pattern [${file_expression}]"
+      exit 1
     fi
 
     mod_ts="$(ls -lc --time-style=+%s "$file" | awk '{ print $6 }')"
     if [[ ! $mod_ts -gt $start_timestamp ]]
     then
-      fail "Expected file [${file_to_inspect}] to have been modified"
+      echo "Expected file [${file_to_inspect}] to have been modified"
+      exit 1
     fi
   done
 }
