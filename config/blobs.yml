@@ -1,1 +1,5 @@
---- {}
+---
+jq/jq-1.5.tar.gz:
+  object_id: 617e96d3-5f40-4376-996b-3a67b2d523a8
+  sha: 6eef3705ac0a322e8aa0521c57ce339671838277
+  size: 739309

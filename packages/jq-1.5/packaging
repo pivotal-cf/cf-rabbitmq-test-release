@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -ex
+
+tar xzf jq/jq-1.5.tar.gz
+pushd jq-1.5
+  ./configure --prefix=${BOSH_INSTALL_TARGET}
+  make
+  make install
+popd
+
