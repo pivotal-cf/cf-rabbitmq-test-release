@@ -11,7 +11,7 @@ main() {
   . "/var/vcap/packages/bash-test-helpers/common.bash"
 
   # shellcheck disable=SC1091
-  . "/var/vcap/jobs/check-file-descriptor-limits-test/bin/rabbitmq-credentials.sh"
+  . "/var/vcap/jobs/check-file-descriptor-limits-test/bin/rabbitmq-vars.sh"
 
   check_file_descriptor_limit_has_been_set_correctly
 }
@@ -19,9 +19,9 @@ main() {
 
 check_file_descriptor_limit_has_been_set_correctly() {
   current_node_name="$(rabbitmqctl eval "node().")"
-  current_fd_total="$(curl -u "$RABBITMQ_MANAGEMENT_USERNAME":"$RABBITMQ_MANAGEMENT_PASSWORD" http://localhost:15672/api/nodes/$current_node_name | jq -r .fd_total)"
+  current_fd_total="$(rabbitmqctl eval "file_handle_cache:ulimit().")"
 
-	log "Current node ($current_node_name) has fd_total: $current_fd_total"
+  log "Current node ($current_node_name) has fd_total: $current_fd_total"
 
   if [[ "$current_fd_total" -ne "${RABBITMQ_FILE_DESCRIPTOR_LIMIT}" ]]
   then

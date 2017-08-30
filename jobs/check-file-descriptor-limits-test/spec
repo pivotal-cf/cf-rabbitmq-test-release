@@ -7,13 +7,9 @@ packages:
   - jq-1.5
 
 properties:
-  rabbitmq-server.administrators.management.username:
-    description: "RabbitMQ admin username to access the management ui"
-  rabbitmq-server.administrators.management.password:
-    description: "RabbitMQ admin password to access the management ui"
   rabbitmq-server.fd_limit:
     description: "The file descriptor limit for the RabbitMQ process"
 
 templates:
   post-deploy.sh: bin/post-deploy
-  rabbitmq-credentials.sh.erb: bin/rabbitmq-credentials.sh
+  rabbitmq-vars.sh.erb: bin/rabbitmq-vars.sh
