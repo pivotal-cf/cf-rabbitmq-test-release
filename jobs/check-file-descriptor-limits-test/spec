@@ -6,9 +6,11 @@ packages:
   - bash-test-helpers
   - jq-1.5
 
-properties:
-  rabbitmq-server.fd_limit:
-    description: "The file descriptor limit for the RabbitMQ process"
+properties: {}
+
+consumes:
+- name: rabbitmq-server
+  type: rabbitmq-server
 
 templates:
   post-deploy.sh: bin/post-deploy
