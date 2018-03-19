@@ -1,0 +1,36 @@
+name: cf-rabbitmq-test
+version: 0.4.5
+commit_hash: 6c0882a
+uncommitted_changes: false
+jobs:
+- name: check-file-descriptor-limits-test
+  version: bcb0bbc52a75cbd16d313a1957dc195a580b9da3fc96b4ca66c4a5c735343c39
+  fingerprint: bcb0bbc52a75cbd16d313a1957dc195a580b9da3fc96b4ca66c4a5c735343c39
+  sha1: sha256:d7f05dc8f34a9554997b3364d2d8a4eb8c53f1076a6c775d005a25ebdb0da64d
+- name: check-logs-test
+  version: db8cf399202d6399a6cfe1cf0f7634d70f5f4213ec4c0e4ac89e5d210a2b9106
+  fingerprint: db8cf399202d6399a6cfe1cf0f7634d70f5f4213ec4c0e4ac89e5d210a2b9106
+  sha1: sha256:c84874c0b10123070816be2b9a9797735c4d2e18cb7758e55da42066645ec5a4
+- name: permissions-test
+  version: 46f6aa2e01d79512fbb28de296f9fbb272eadeebebb8a93c0cbac578e12bd1bb
+  fingerprint: 46f6aa2e01d79512fbb28de296f9fbb272eadeebebb8a93c0cbac578e12bd1bb
+  sha1: sha256:1a3ec8d8e19ac4be466150896c3b3037f560d4a2a5f320b2a47a6545efb8e994
+- name: syslog-configuration-test
+  version: 15b151b2be017c6210e3a99d5d9349334da3acd16a27fcf6f853a5306eefc7ad
+  fingerprint: 15b151b2be017c6210e3a99d5d9349334da3acd16a27fcf6f853a5306eefc7ad
+  sha1: sha256:cffc1aa30ab2872c3df638803ea1c34f05c1a7265c89bdd8c7ac4356a84fd583
+packages:
+- name: bash-test-helpers
+  version: c1a3cb2ce0577a13cc889509fd8585627c2eab86b9508dfae5675c2d806f41bd
+  fingerprint: c1a3cb2ce0577a13cc889509fd8585627c2eab86b9508dfae5675c2d806f41bd
+  sha1: sha256:e44363cf2263249671bd4cd9aeb62194ae82824c8f10637fc23439828fd6713e
+  dependencies: []
+- name: jq-1.5
+  version: 2888baf254abeb0892d0b96123f9bc28ea332ccf0b7d7e327b8630b4c9bd7e27
+  fingerprint: 2888baf254abeb0892d0b96123f9bc28ea332ccf0b7d7e327b8630b4c9bd7e27
+  sha1: sha256:8a8ae171e68b2c57eea29c87d53b2bb7fca2db9a669c9d4357a64649ba225844
+  dependencies: []
+license:
+  version: a33ecac3732bea30dd41ae46dbc88761d98cb93e29379daa2aaa3926ef4408e0
+  fingerprint: a33ecac3732bea30dd41ae46dbc88761d98cb93e29379daa2aaa3926ef4408e0
+  sha1: sha256:0d4bd6eafd467f66f3556f7a67c6d496ed2058a7ae6a43ab136fc6cbec8914b3
