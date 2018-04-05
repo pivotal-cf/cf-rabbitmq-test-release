@@ -6,9 +6,9 @@ syslog release, you will want to co-locate `syslog-configuration-test` job from
 this release:
 
 ```
-rmq-server/0 (instance)
-|- syslog_forwarder (syslog release)
-\- syslog-configuration-test (cf-rabbitmq-test release)
+  rmq-server/0 (instance)
+  |- syslog_forwarder (syslog release)
+  \- syslog-configuration-test (cf-rabbitmq-test release)
 ```
 
 You can see a configuration example in the [cf-rabbitmq-release
