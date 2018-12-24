@@ -13,10 +13,7 @@ main() {
   # shellcheck disable=SC1091
   . "/var/vcap/jobs/check-file-descriptor-limits-test/bin/rabbitmq-vars.sh"
 
-  if [[ "$(lsb_release -c | awk '{print $2}')" != "xenial" ]]
-  then
-    check_file_descriptor_limit_has_been_set_correctly
-  fi
+  check_file_descriptor_limit_has_been_set_correctly
 }
 
 
