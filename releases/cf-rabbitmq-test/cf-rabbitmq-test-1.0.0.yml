@@ -1,0 +1,36 @@
+name: cf-rabbitmq-test
+version: 1.0.0
+commit_hash: 006249c
+uncommitted_changes: false
+jobs:
+- name: check-file-descriptor-limits-test
+  version: 33536975e761f195c99ab73fb9554cc71883882a
+  fingerprint: 33536975e761f195c99ab73fb9554cc71883882a
+  sha1: d0a9ad4851370d55f03ed05452242732ae4b70b7
+- name: check-logs-test
+  version: 86f5248d3405db3a073737d5d010e47e44ab903a
+  fingerprint: 86f5248d3405db3a073737d5d010e47e44ab903a
+  sha1: a25b9bfe64b9adf6d1977b53ca7479933c040e99
+- name: permissions-test
+  version: 4240b3f51fcab28a5afdb91ef390681d693b980b
+  fingerprint: 4240b3f51fcab28a5afdb91ef390681d693b980b
+  sha1: cd7b7600abe43269c7e1d00f5d3809aa9dd42e8e
+- name: syslog-configuration-test
+  version: 847c7acbf27614f7f7a9460ca7217a92bcd0249d
+  fingerprint: 847c7acbf27614f7f7a9460ca7217a92bcd0249d
+  sha1: 0c23800be2cc83a2dddbf7579f3b36a6adbc314e
+packages:
+- name: bash-test-helpers
+  version: 62b6b71bf92da5f9eabb2cd6fd82da889bfb3c7e
+  fingerprint: 62b6b71bf92da5f9eabb2cd6fd82da889bfb3c7e
+  sha1: dca5ac0aeb47ccfbd07715eef374f3cdbd78c5df
+  dependencies: []
+- name: jq-1.5
+  version: 8fde9e609394806a716418761ab0c19a478db6de
+  fingerprint: 8fde9e609394806a716418761ab0c19a478db6de
+  sha1: cb4e0bde28edb89ef2b89df8ad273513158d76df
+  dependencies: []
+license:
+  version: f57eeb5bcbe4624eff263a9f96f1db2e6039ba1e
+  fingerprint: f57eeb5bcbe4624eff263a9f96f1db2e6039ba1e
+  sha1: b61b5dc52a741f63219f4e92a7471ad80a715d23
