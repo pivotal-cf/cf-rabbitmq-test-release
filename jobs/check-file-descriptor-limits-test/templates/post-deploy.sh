@@ -4,7 +4,7 @@ set -e
 
 [ -z "$DEBUG" ] || set -x
 
-export PATH="$PATH:/var/vcap/packages/rabbitmq-server/privbin/:/var/vcap/packages/erlang/bin:/var/vcap/packages/jq-1.5/bin"
+export PATH="$PATH:/var/vcap/packages/rabbitmq-server/bin/:/var/vcap/packages/erlang/bin:/var/vcap/packages/jq-1.5/bin"
 
 main() {
   # shellcheck disable=1091
