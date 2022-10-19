@@ -27,8 +27,12 @@ load_ryslogd_config_check() {
   set -e
 }
 
+# Store the regex to match if the imfile module is loaded in a variable, for use in bash
+# test brackets [[ ]]
+imfile_match="loading module *.*imfile.so"
+
 ensure_rsyslog_imfile_module_loaded() {
-  [[ $RSYSLOG_CONFIG_CHECK = *"loading module '/usr/lib/rsyslog/imfile.so'"* ]] ||
+  [[ $RSYSLOG_CONFIG_CHECK =~ $imfile_match ]] ||
   fail "rsyslog imfile not loaded, can't watch log files"
 }
 
