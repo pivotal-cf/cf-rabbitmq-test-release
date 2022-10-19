@@ -1,0 +1,45 @@
+name: cf-rabbitmq-test
+version: 9.0.0
+commit_hash: bf0352a
+uncommitted_changes: false
+jobs:
+- name: check-file-descriptor-limits-test
+  version: 6ba57da97f9aff9c228203602a51483e4d3885874a4daa0f27f59b2a7c92b2ea
+  fingerprint: 6ba57da97f9aff9c228203602a51483e4d3885874a4daa0f27f59b2a7c92b2ea
+  sha1: sha256:09fd62cdd7e8ea678253fd5856a1d1aa767dd33e0c048b4e3d346d45e4676dde
+  packages:
+  - bash-test-helpers
+  - jq-1.5
+- name: check-logs-test
+  version: db8cf399202d6399a6cfe1cf0f7634d70f5f4213ec4c0e4ac89e5d210a2b9106
+  fingerprint: db8cf399202d6399a6cfe1cf0f7634d70f5f4213ec4c0e4ac89e5d210a2b9106
+  sha1: sha256:c84874c0b10123070816be2b9a9797735c4d2e18cb7758e55da42066645ec5a4
+  packages:
+  - bash-test-helpers
+- name: permissions-test
+  version: 46f6aa2e01d79512fbb28de296f9fbb272eadeebebb8a93c0cbac578e12bd1bb
+  fingerprint: 46f6aa2e01d79512fbb28de296f9fbb272eadeebebb8a93c0cbac578e12bd1bb
+  sha1: sha256:1a3ec8d8e19ac4be466150896c3b3037f560d4a2a5f320b2a47a6545efb8e994
+  packages:
+  - bash-test-helpers
+- name: syslog-configuration-test
+  version: 8139c449a833240dd5202b9ff602ab17bdd62f002f3beb55efb2c1260032a89e
+  fingerprint: 8139c449a833240dd5202b9ff602ab17bdd62f002f3beb55efb2c1260032a89e
+  sha1: sha256:92ca946b7e47bb7a956d2a1a3510932d5a57ef08a2eb06872aaca46d29ccb955
+  packages:
+  - bash-test-helpers
+packages:
+- name: bash-test-helpers
+  version: c1a3cb2ce0577a13cc889509fd8585627c2eab86b9508dfae5675c2d806f41bd
+  fingerprint: c1a3cb2ce0577a13cc889509fd8585627c2eab86b9508dfae5675c2d806f41bd
+  sha1: sha256:e44363cf2263249671bd4cd9aeb62194ae82824c8f10637fc23439828fd6713e
+  dependencies: []
+- name: jq-1.5
+  version: 2888baf254abeb0892d0b96123f9bc28ea332ccf0b7d7e327b8630b4c9bd7e27
+  fingerprint: 2888baf254abeb0892d0b96123f9bc28ea332ccf0b7d7e327b8630b4c9bd7e27
+  sha1: sha256:8a8ae171e68b2c57eea29c87d53b2bb7fca2db9a669c9d4357a64649ba225844
+  dependencies: []
+license:
+  version: 9df3e86e3997e875bd6f75b5813279050f95782932fb7125fad0eb183c8e8c27
+  fingerprint: 9df3e86e3997e875bd6f75b5813279050f95782932fb7125fad0eb183c8e8c27
+  sha1: sha256:aea4c0df229bcb305694a1765ffe592a8d6f7217e8fedea2e4b484e636b69818
